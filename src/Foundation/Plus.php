@@ -75,9 +75,6 @@ class Plus implements PlusInterface
 
             return true;
         }
-
-        // Call the native output image
-        header('Content-Type: image/png');
         imagepng($this->imageHandle);
     }
 
